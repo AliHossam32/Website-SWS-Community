@@ -86,7 +86,7 @@ const CallToAction = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Transform Your 
-            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"> STEM Journey?</span>
+            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"> SWS Journey?</span>
           </h2>
           
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">

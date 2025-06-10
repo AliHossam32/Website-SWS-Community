@@ -1,7 +1,12 @@
 import React from 'react';
 import { ArrowRight, Play, Star, Users, Trophy, BookOpen, GraduationCap } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-20 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,18 +20,16 @@ const Hero = () => {
                     <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-sm text-gray-600">Trusted by 100+ students</span>
+                <span className="text-sm text-gray-600">{t.hero.trustedBy}</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Master STEM Skills &
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"> Win Scholarships</span>
+                {t.hero.title}
+                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">{t.hero.titleHighlight}</span>
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
-                Join the premier educational community for SWS students. Master English proficiency, 
-                programming skills, and build competition-ready projects while preparing for international 
-                university scholarships with expert guidance and peer support.
+                {t.hero.description}
               </p>
             </div>
 
@@ -36,23 +39,23 @@ const Hero = () => {
                 <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-blue-600 rounded-lg flex items-center justify-center">
                   <GraduationCap className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">International Scholarship Ready</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t.hero.scholarshipTitle}</h3>
               </div>
               <p className="text-gray-700 text-sm">
-                Targeted training and application guidance to qualify for prestigious university scholarships worldwide
+                {t.hero.scholarshipDescription}
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 shadow-lg" onClick={() => window.location.href = '#call-to-action'}>
-                <span className="font-semibold">Start Learning Free</span>
+                <span className="font-semibold">{t.hero.startLearning}</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
               
               <button className="flex items-center justify-center space-x-2 px-8 py-4 bg-white text-gray-700 rounded-xl border border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-all duration-200 transform hover:scale-105 shadow-md">
                 <Play className="w-5 h-5" />
-                <span className="font-semibold">Watch Demo</span>
+                <span className="font-semibold">{t.hero.watchDemo}</span>
               </button>
             </div>
 
@@ -63,7 +66,7 @@ const Hero = () => {
                   <Users className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="text-2xl font-bold text-gray-900">1+</div>
-                <div className="text-sm text-gray-600">Active Students</div>
+                <div className="text-sm text-gray-600">{t.hero.stats.students}</div>
               </div>
               
               <div className="text-center">
@@ -71,7 +74,7 @@ const Hero = () => {
                   <GraduationCap className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div className="text-2xl font-bold text-gray-900">1+</div>
-                <div className="text-sm text-gray-600">Scholarships Won</div>
+                <div className="text-sm text-gray-600">{t.hero.stats.scholarships}</div>
               </div>
               
               <div className="text-center">
@@ -79,7 +82,7 @@ const Hero = () => {
                   <Trophy className="w-6 h-6 text-purple-600" />
                 </div>
                 <div className="text-2xl font-bold text-gray-900">1+</div>
-                <div className="text-sm text-gray-600">Competition Wins</div>
+                <div className="text-sm text-gray-600">{t.hero.stats.competitions}</div>
               </div>
             </div>
           </div>

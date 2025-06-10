@@ -7,19 +7,22 @@ import Community from './components/Community';
 import Statistics from './components/Statistics';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Hero />
-      <Features />
-      <LearningModules />
-      <Community />
-      <Statistics />
-      <CallToAction />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-white">
+        <Header />
+        <Hero />
+        <Features />
+        <LearningModules />
+        <Community />
+        <Statistics />
+        <CallToAction />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 
