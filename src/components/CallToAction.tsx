@@ -85,8 +85,8 @@ const CallToAction = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your 
-            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"> SWS Journey?</span>
+          We don’t need a STEM school
+            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"> to be STEM students.</span>
           </h2>
           
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
@@ -149,7 +149,7 @@ const CallToAction = () => {
           <div className="bg-white rounded-2xl p-8 shadow-2xl">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Start Your Free Trial</h3>
-              <p className="text-gray-600">Join thousands of successful STEM students</p>
+              <p className="text-gray-600">Join SWS students</p>
             </div>
 
             <form className="space-y-4" onSubmit={handleSubmit}>
@@ -200,8 +200,9 @@ const CallToAction = () => {
                   <option value="">Select your goal</option>
                   <option value="scholarship">Win International Scholarship</option>
                   <option value="competition">Excel in Competitions</option>
-                  <option value="skills">Improve STEM Skills</option>
-                  <option value="projects">Build Amazing Projects</option>
+                  <option value="skills">Improve Your English Skills</option>
+                  <option value="projects">Learn Programming</option>
+                  <option value="projects">Other</option>
                 </select>
               </div>
 

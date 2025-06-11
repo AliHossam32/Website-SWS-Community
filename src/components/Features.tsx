@@ -30,7 +30,7 @@ const Features = () => {
     {
       icon: Award,
       title: 'Competition Ready',
-      description: 'Specialized training for hackathons, science fairs, and STEM competitions.',
+      description: 'Specialized training for hackathons, science fairs, and International competitions.',
       color: 'from-orange-500 to-red-500'
     },
     {

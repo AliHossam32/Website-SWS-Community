@@ -24,8 +24,8 @@ const Hero = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                {t.hero.title}
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">{t.hero.titleHighlight}</span>
+              STEMers Without STEM &
+                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"> Win Scholarships</span>
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
