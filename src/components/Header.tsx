@@ -15,7 +15,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center justify-center">
             <img 
-              src="../SWS logo.png" 
+              src="/logo.png" 
               alt="Logo" 
               className="h-10 md:h-11 w-auto object-contain transition-all duration-200" 
             />
