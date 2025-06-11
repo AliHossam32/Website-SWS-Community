@@ -13,11 +13,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <Code className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900">SWS Community</span>
+          <div className="flex items-center justify-center">
+            <img 
+              src="../logo/SWS logo.png" 
+              alt="Logo" 
+              className="h-10 md:h-11 w-auto object-contain transition-all duration-200" 
+            />
           </div>
 
           {/* Desktop Navigation */}
